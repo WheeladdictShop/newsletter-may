@@ -1,0 +1,268 @@
+body{
+  background-color: rgb(241, 241, 241);
+  font-family: 'Tex Gyre Adventor', 'Helvetica', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.content{
+  max-width: 840px; 
+  margin: 0 auto; 
+  background-color: rgb(255, 255, 255); 
+  padding: 1%;
+  text-align: center;
+}
+
+.header{
+  width: 100%;
+  height: 55px;
+}
+
+.header-content{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+}
+
+.logo{
+  height: 50px;
+  text-align: left;
+  margin-left: 4px;
+}
+
+.logo img{
+  height: 50px;
+}
+
+.social{
+  text-align: center;
+}
+
+.social img{
+  margin-right: 5px;
+}
+
+.website{
+  font-size: 14pt;
+  color: black;
+  font-weight: bold;
+  text-align: right;
+}
+
+.hero{
+  max-width: 99%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.hero img{
+  width: 100%;
+}
+
+.skates-grid{
+  width: 98%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.quad-grid-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 15px;
+}
+
+.text-grid{
+  height: 410px;
+  width: 100%; 
+  padding: 0 2%;
+  display: grid;
+  grid-template-rows: 50px 100px;
+  align-content: center;
+}
+
+.pink{
+  background-color: rgb(253, 145, 221);
+}
+
+.yellow{
+  background-color: rgb(252, 250, 137);
+}
+
+h2{
+  font-size: 12pt;
+}
+
+p{
+  font-size: 12pt;
+}
+
+.small-text{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.image-grid{
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px;
+  grid-gap: 10px;
+  overflow: hidden;
+}
+
+.image-1, .image-2, .image-3, .image-4{
+  width: 98%;
+  height: 98%;
+  margin: 0 auto;
+}
+
+.rio-images img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inline-grid-content{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 15px;
+  margin: 0 auto;
+}
+
+.rio-skates{
+  background-color: rgb(106, 224, 253);
+  margin-bottom: 20px;
+}
+
+
+.rio-text{
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px 20px 15px 20px;
+}
+
+.rio-images{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding-bottom: 15px;
+}
+
+.accessories{
+  width: 99%;
+}
+
+.orange{
+  background-color: rgb(253, 202, 106);
+  margin: 0 auto;
+}
+
+.accessories-images{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+.footer{
+  width: 99%;
+  text-align: center;
+  font-size: 9pt; 
+  font-weight: 400; 
+  color: rgb(192, 192, 192);
+}
+
+.footer a{
+  color: rgb(192, 192, 192); 
+  font-size: 9pt; 
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+/** Media Queries **/
+/* Width max825 */
+
+@media only screen and (max-width: 700px) {
+  .logo img{
+    height: 45px;
+  }
+
+  .social{
+    margin-left: 10px;
+  }
+
+  .website{
+    font-size: 9pt;
+  }
+
+  .quad-grid-content{
+    grid-template-columns: 1fr;
+  }
+
+  .inline-grid-content{
+    grid-template-columns: 1fr;
+  }
+
+  .text-grid{
+    height: 210px;
+    width: 98%; 
+    padding: 0 2%;
+    display: grid;
+    grid-template-rows: 50px 100px;
+    
+  }
+  .image-grid{
+    grid-template-rows: 190px 190px;
+    grid-template-columns: 190px 190px;
+    grid-gap: 15px;
+    justify-content: center;
+    
+  }
+  .accessories-images{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 850px) {
+  .quad-grid-content{
+    grid-template-columns: 1fr;
+  }
+
+  .inline-grid-content{
+    grid-template-columns: 1fr;
+  }
+
+  .text-grid{
+    height: 210px;
+    width: 98%; 
+    padding: 0 2%;
+    display: grid;
+    grid-template-rows: 50px 100px;
+    
+  }
+  .image-grid{
+    grid-template-rows: 190px 190px;
+    grid-template-columns: 190px 190px;
+    grid-gap: 15px;
+    justify-content: center;
+  }
+  .accessories-images{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+}
